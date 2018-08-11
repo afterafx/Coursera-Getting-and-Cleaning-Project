@@ -1,0 +1,165 @@
+---
+title: "Codebook"
+author: "Kevin Baktiar"
+date: "8/10/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Codebook
+
+***
+
+For information on this data set and how it was created, see the README.md file in this respository.
+
+### Data
+
+***
+
+The data is located in this repository under tidy_data.txt, which contains space-separated values.
+
+The first row contains the names of the variables, the remaining is the data for those variables.
+
+### Variables
+
+***
+
+##### Identifiers
+
+* subject
+   Identifies the subject, from 1 to 30
+  
+* activity
+   Identifies the activity between 6 different factors
+    + WALKING
+    + WALKING_UPSTAIRS
+    + WALKING_DOWNSTAIRS
+    + SITTING
+    + STANDING
+    + LAYING
+    
+##### Average of measurements
+
+###### Time-domain Signals
+
+  * Average of Body Acceleration
+    + timeDomainBodyAcceleration Mean X, Y and Z
+    
+  * Standard Deviation of Body Acceleration
+    + timeDomainBodyAcceleration Standard Deviation X, Y, and Z
+    
+  * Average of Gravity Acceleration
+    + timeDomainGravityAcceleration Mean X, Y, and Z
+    
+  * Standard Deviation of Gravity Acceleration
+    + timeDomainGravityAcceleration Standard Deviation X, Y, and Z
+    
+  * Average of Acceleration Jerk
+    + timeDomainBodyAccerelationJerk Mean X, Y, and Z
+    
+  * Standard Deviation of Accerelation Jerk
+    + timeDomainBodyAccerelationJerk Standard Deviation X, Y, and Z
+    
+  * Average of Body Gyroscope
+    + timeDomainBodyGyroscope Mean X, Y, and Z
+    
+  * Standard Deviation of Body Gyroscope
+    + timeDomainBodyGyroscope Standard Deviation X, Y, and Z
+    
+  * Average of Body Gyroscope Jerk
+    + timeDomainBodyGyroscopeJerk Mean X, Y, and Z
+    
+  * Standard Deviation of Body Gyroscope Jerk
+    + timeDomainBodyGyroscopeJerk Standard Deviation X, Y, and Z
+    
+  * Average of Body Acceleration Magnitude
+    + timeDomainBodyAccelerationMagnitude Mean
+    
+  * Standard Deviation of Body Acceleration Magnitude
+    + timeDomainBodyAccelerationMagnitude Standard Deviation
+    
+  * Average of Gravity Acceleration Magnitude
+    + timeDomainGravityAccelerationMagnitude Mean
+    
+  * Standard Deviation of Gravity Acceleration Magnitude
+    + timeDomainGravityAccelerationMagnitude Standard Deviation
+    
+  * Average of Body Acceleration Jerk Magnitude
+    + timeDomainBodyAccelerationJerkMagnitude Mean
+    
+  * Standard Deviation of Body Acceleration Jerk Magnitude
+    + timeDomainBodyAccelerationJerkMagnitude Standard Deviation
+    
+  * Average of Body Gyroscope Magnitude
+    + timeDomainBodyGyroscopeMagnitude Mean
+    
+  * Standard Deviation of Body Gyroscope Magnitude
+    + timeDomainBodyGyroscopeMagnitude Standard Deviation
+    
+  * Average of Body Gyroscope Jerk Magnitude
+    + timeDomainBodyGyroscopeJerkMagnitude Mean
+    
+  * Standard Deviation of Body Gyroscope Jerk Magnitude
+    + timeDomainBodyGyroscopeJerkMagnitude Standard Deviation
+    
+###### Frequency-domain Signals
+
+  * Average of Body Acceleration
+    + frequencyDomainBodyAcceleration Mean X, Y, and Z
+    
+  * Standard Deviation of Body Acceleration
+    + frequencyDomainBodyAcceleration Standard Deviation X, Y, and Z
+    
+  * Average of Body Acceleration Jerk
+    + frequencyDomainBodyAccelerationJerk Mean X, Y, and Z
+    
+  * Standard Deviation of Body Acceleration Jerk
+    + frequencyDomainBodyAccelerationJerk Standard Deviation X, Y, and Z
+    
+  * Average of Body Gyroscope
+    + frequencyDomainBodyGyroscope Mean X, Y, and Z
+    
+  * Standard Deviation of Body Gyroscope
+    + frequencyDomainBodyGyroscope Standard Deviation X, Y, and Z
+    
+  * Average of Body Acceleration Magnitude
+    + frequencyDomainBodyAccelerationMagnitude Mean
+    
+  * Standard Deviation of Body Acceleration Magnitude
+    + frequencyDomainBodyAccelerationMagnitude Standard Deviation
+    
+  * Average of Body Acceleration Jerk Magnitude
+    + frequencyDomainBodyAccelerationJerkMagnitude Mean
+    
+  * Standard Deviation of Body Acceleration Jerk Magnitude
+    + frequencyDomainBodyAccelerationJerkMagnitude Standard Deviation
+    
+  * Average of Body Gyroscope Magnitude
+    + frequencyDomainBodyGyroscopeMagnitude Mean
+    
+  * Standard Deviation of Body Gyroscope Magnitude
+    + frequencyDomainBodyGyroscopeMagnitude Standard Deviation
+    
+  * Average of Body Gyroscope Jerk Magnitude
+    + frequencyDomainBodyGyroscopeJerkMagnitude Mean
+    
+  * Standard Deviation of Body Gyroscope Jerk Magnitude
+    + frequencyDomainBodyGyroscopeJerkMagnitude Standard Deviation
+    
+### Transformations
+
+***
+
+The data set can be replicated using the run_analysis.R script.
+
+* Download and unzip the Data
+* Read the Data
+* Merge the training sets to create one data set
+* Extract only the measurements of the mean and standard deviation for each measurement
+* Use descriptive activity names to name the activities in the data set
+* Appropriately label the data set with descriptive variable names
+* Then create a second tidy data set with the average of ech variable for each activity and each subject.
+* Write that data set out to tidy_data.txt (Have included this file in the respository)
